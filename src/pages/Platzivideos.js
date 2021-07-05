@@ -1,8 +1,15 @@
 import React from 'react';
+import Header from '../components/Header';
+import Usermenu from '../components/Usermenu';
 
 const Platzivideo = () =>{
     return(
-        <h1>soy la pagina principal</h1>
+        <>
+            <Header >
+               <Usermenu /> 
+            </Header>
+            <h1>soy la pagina principal</h1>
+        </>
     );
 }
 
