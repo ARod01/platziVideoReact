@@ -1,11 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
-
+import "../styles/register.css"
 const Register = () =>{
     return(
         <>
         <Header />
-        <h1>soy el Register</h1>
+        <section className="register">
+            <section className="register__container">
+                <h2>Regístrate</h2>
+                <form className="register__container--form">
+                <input className="input" type="text" placeholder="Nombre" />
+                <input className="input" type="text" placeholder="Correo" />
+                <input className="input" type="password" placeholder="Contraseña" />
+                <button className="button">Registrarme</button>
+                </form>
+                <Link to="/">Iniciar sesión</Link>
+            </section>
+        </section>
         </>
     );
 }
